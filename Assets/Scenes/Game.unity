@@ -219,7 +219,6 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: af3cd139e675b3e4e85b6d1d9e211406, type: 2}
-  m_RootGameObject: {fileID: 1754666668}
   m_IsPrefabParent: 0
 --- !u!1001 &938900891
 Prefab:
@@ -266,7 +265,6 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: af3cd139e675b3e4e85b6d1d9e211406, type: 2}
-  m_RootGameObject: {fileID: 1430667073}
   m_IsPrefabParent: 0
 --- !u!1 &1241655557
 GameObject:
@@ -280,6 +278,7 @@ GameObject:
   - component: {fileID: 1241655560}
   - component: {fileID: 1241655561}
   - component: {fileID: 1241655562}
+  - component: {fileID: 1241655563}
   m_Layer: 0
   m_Name: Bunny
   m_TagString: Untagged
@@ -381,169 +380,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bunnyJumpForce: 700
---- !u!1 &1430667073
-GameObject:
+--- !u!95 &1241655563
+Animator:
+  serializedVersion: 3
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 1587702750158560, guid: af3cd139e675b3e4e85b6d1d9e211406,
-    type: 2}
-  m_PrefabInternal: {fileID: 938900891}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1430667076}
-  - component: {fileID: 1430667075}
-  - component: {fileID: 1430667074}
-  m_Layer: 0
-  m_Name: Grass (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!61 &1430667074
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 61042142792905646, guid: af3cd139e675b3e4e85b6d1d9e211406,
-    type: 2}
-  m_PrefabInternal: {fileID: 938900891}
-  m_GameObject: {fileID: 1430667073}
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1241655557}
   m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Size: {x: 1.28, y: 1.28}
---- !u!212 &1430667075
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 212557671802956314, guid: af3cd139e675b3e4e85b6d1d9e211406,
-    type: 2}
-  m_PrefabInternal: {fileID: 938900891}
-  m_GameObject: {fileID: 1430667073}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 0
-  m_ReflectionProbeUsage: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 87a3aeac84d14284f8389466eea5ffab, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
---- !u!4 &1430667076
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 4403215888640934, guid: af3cd139e675b3e4e85b6d1d9e211406,
-    type: 2}
-  m_PrefabInternal: {fileID: 938900891}
-  m_GameObject: {fileID: 1430667073}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.39, y: -4.344, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1754666668
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 1587702750158560, guid: af3cd139e675b3e4e85b6d1d9e211406,
-    type: 2}
-  m_PrefabInternal: {fileID: 666412844}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1754666671}
-  - component: {fileID: 1754666670}
-  - component: {fileID: 1754666669}
-  m_Layer: 0
-  m_Name: Grass
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!61 &1754666669
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 61042142792905646, guid: af3cd139e675b3e4e85b6d1d9e211406,
-    type: 2}
-  m_PrefabInternal: {fileID: 666412844}
-  m_GameObject: {fileID: 1754666668}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Size: {x: 1.28, y: 1.28}
---- !u!212 &1754666670
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 212557671802956314, guid: af3cd139e675b3e4e85b6d1d9e211406,
-    type: 2}
-  m_PrefabInternal: {fileID: 666412844}
-  m_GameObject: {fileID: 1754666668}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 0
-  m_ReflectionProbeUsage: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 87a3aeac84d14284f8389466eea5ffab, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
---- !u!4 &1754666671
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 4403215888640934, guid: af3cd139e675b3e4e85b6d1d9e211406,
-    type: 2}
-  m_PrefabInternal: {fileID: 666412844}
-  m_GameObject: {fileID: 1754666668}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.6651082, y: -4.3456326, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 267abdb798e9ce649a36d921fae1cbb7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
