@@ -253,8 +253,116 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabToSpawn: {fileID: 4087892292096738, guid: 2937ca6e45bee3144ada673981543a10,
     type: 2}
-  spawnRate: 1
-  randomDelay: 3
+  spawnCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0.018777294
+      value: 1.9988248
+      inSlope: -0.03187277
+      outSlope: -0.03187277
+      tangentMode: 34
+    - serializedVersion: 2
+      time: 0.054009605
+      value: 1.9977019
+      inSlope: 0.034570694
+      outSlope: 0.034570694
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.054877806
+      value: 1.7089252
+      inSlope: 5.109078
+      outSlope: 5.109078
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.076747745
+      value: 1.4107921
+      inSlope: -3.3384562
+      outSlope: -3.3384562
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.13937932
+      value: 1.4152817
+      inSlope: -0.035762787
+      outSlope: -0.035762787
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.16212413
+      value: 1.900114
+      inSlope: -0.18427123
+      outSlope: -0.18427123
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.24747127
+      value: 1.2226148
+      inSlope: -0.9459257
+      outSlope: -0.9459257
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.32121205
+      value: 1.935069
+      inSlope: -0.7855892
+      outSlope: -0.7855892
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.43004018
+      value: 1.1233639
+      inSlope: -1.4543533
+      outSlope: -1.4543533
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.4634215
+      value: 1.7378083
+      inSlope: -1.090169
+      outSlope: -1.090169
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.61323833
+      value: 1.1284345
+      inSlope: -1.9621849
+      outSlope: -1.9621849
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.63134277
+      value: 1.641425
+      inSlope: -1.2409687
+      outSlope: -1.2409687
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.7965882
+      value: 1.0688244
+      inSlope: -2.5117397
+      outSlope: -2.5117397
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.8010012
+      value: 1.6168904
+      inSlope: -1.9711256
+      outSlope: -1.9711256
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.87907684
+      value: 1.2610885
+      inSlope: 0.6253285
+      outSlope: 0.6253285
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.89841145
+      value: 1.7120868
+      inSlope: 12.138486
+      outSlope: 12.138486
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1.0002075
+      value: 1.9998981
+      inSlope: 2.8273313
+      outSlope: 2.8273313
+      tangentMode: 34
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  curveLengthInSeconds: 30
+  jitter: 0.25
 --- !u!4 &194681450
 Transform:
   m_ObjectHideFlags: 0
@@ -1402,9 +1510,9 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
-  m_Offset: {x: -1.3792267, y: 1.5869713}
+  m_Offset: {x: -0.4726448, y: 1.5869713}
   serializedVersion: 2
-  m_Size: {x: 4.210658, y: 12.734856}
+  m_Size: {x: 6.02382, y: 12.734856}
 --- !u!50 &1939166627
 Rigidbody2D:
   serializedVersion: 4

@@ -12,9 +12,10 @@ public class BunnyController : MonoBehaviour {
     private Collider2D myCollider;
     public Text scoreText;
     private float startTime;
+    private int jumpsLeft = 2;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start() {
         myRigidBody = GetComponent<Rigidbody2D>();
         myAnim = GetComponent<Animator>();
         myCollider = GetComponent<Collider2D>();
@@ -26,9 +27,22 @@ public class BunnyController : MonoBehaviour {
     {
         if (BunnyHurtTime == -1)
         {
-            if (Input.GetButtonUp("Jump"))
+            if (Input.GetButtonUp("Jump") && jumpsLeft > 0)
             {
-                myRigidBody.AddForce(transform.up * bunnyJumpForce);
+                if (myRigidBody.velocity.y < 0)
+                {
+                    myRigidBody.velocity = Vector2.zero;
+                }
+                if (jumpsLeft == 1)
+                {
+                    myRigidBody.AddForce(transform.up * bunnyJumpForce * 0.75f);
+                }
+                else
+                {
+                    myRigidBody.AddForce(transform.up * bunnyJumpForce);
+                }
+
+                jumpsLeft--;
             }
             myAnim.SetFloat("vVelocity", myRigidBody.velocity.y);
             scoreText.text = (Time.time - startTime).ToString("0.0");
@@ -43,7 +57,7 @@ public class BunnyController : MonoBehaviour {
     }
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.collider.gameObject.layer == LayerMask.NameToLayer("Enemy")) 
+        if (collision.collider.gameObject.layer == LayerMask.NameToLayer("Enemy"))
         {
             foreach (PrefabSpawner spawner in FindObjectsOfType<PrefabSpawner>())
             {
@@ -59,7 +73,11 @@ public class BunnyController : MonoBehaviour {
             myAnim.SetBool("BunnyHurt", true);
             myRigidBody.velocity = Vector2.zero;
             myRigidBody.AddForce(transform.up * bunnyJumpForce);
-            myCollider.enabled = false; 
+            myCollider.enabled = false;
+        }
+        else if (collision.collider.gameObject.layer == LayerMask.NameToLayer("Ground"))
+        {
+            jumpsLeft = 2;
         }
     }
 }
